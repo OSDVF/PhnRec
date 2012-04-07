@@ -5,7 +5,6 @@
 #include <map>
 #include <list>
 #include <string>
-#include <cstring>
 
 // kinds of text outputs 
 #ifndef  TO_CONSTANTS

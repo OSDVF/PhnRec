@@ -21,7 +21,7 @@
 #include "fsm.h"
 
 // definition of INFINITY
-unsigned char fsm_infinity_bytes[] = {0x00, 0x00, 0x80, 0x7F};
+char fsm_infinity_bytes[] = {0x00, 0x00, 0x80, 0x7F};
 
 FSM::FSM() :
 	isTransducer(false),

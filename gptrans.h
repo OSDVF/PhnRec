@@ -16,7 +16,6 @@
 
 #include <list>
 #include <string>
-#include <cstring>
 #include <map>
 #include <set>
 #include "fsm.h"

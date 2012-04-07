@@ -13,8 +13,8 @@
 
 #include <stdio.h>
 #include <assert.h>
+#include <string.h>
 #include "configz.h"
-#include <cstring>
 
 Config::Config() :
         variables(0),

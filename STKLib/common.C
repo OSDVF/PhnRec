@@ -26,7 +26,6 @@
 #include <iostream>
 
 #include <string>
-#include <cstring>
 
 
 static union
@@ -1200,7 +1199,7 @@ void fast_softmax_vec(FLOAT *in, FLOAT *out, int size)
       }
       if (opt == 'A') continue;
   
-      chptr = strstr((char*)pOptionMapping, tstr);
+      chptr = strstr(pOptionMapping, tstr); //rampa
       if (chptr == NULL) Error("Invalid command line option '-%c'", opt);
   
       chptr += 3;

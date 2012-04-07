@@ -12,10 +12,10 @@
  **************************************************************************/
 
 #include <assert.h>
+#include <string.h>
 #include "lexicon.h"
 #include "filename.h"
 #include "encode.h"
-#include <cstring>
 
 Lexicon::Lexicon() :
         strtok_buff(0),

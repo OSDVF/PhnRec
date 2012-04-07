@@ -16,7 +16,6 @@
 
 #include <stdio.h>
 #include <string>
-#include <climits>
 #include "phntrans.h"
 
 // error codes

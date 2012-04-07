@@ -15,8 +15,9 @@
 #include "filename.h"
 #include "encode.h"
 #include <stdlib.h>
+#include <string.h>
 #include <assert.h>
-#include <cstring>
+#include <limits.h>
 
 KWSNetGenerator::KWSNetGenerator() :
 		PT(0),

@@ -2,8 +2,6 @@
 #define _NORM_H
 
 #include <map>
-#include <cstring>
-#include <climits>
 
 // normalization kinds
 #define NK_NONE      0

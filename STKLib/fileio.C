@@ -18,6 +18,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <string>
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <ctype.h>
@@ -202,7 +203,7 @@ namespace STK
     char          dir_name[260];
     char *        chptr;
   
-    if ((chptr=strrchr((char*)pFileName, '/')) == NULL)
+    if ((chptr=strrchr(pFileName, '/')) == NULL)
       return 0;
     
     

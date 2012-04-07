@@ -46,7 +46,7 @@ NeuralNet::~NeuralNet()
 char *NeuralNet::SkipSpaces(char *pText)
 {
    char *pt = pText;
-   while(pt != 0 && strchr(" \t\n\r", *pt) != 0)
+   while(pt != '\0' && strchr(" \t\n\r", *pt) != 0)
    {
       pt++;
    }
@@ -56,7 +56,7 @@ char *NeuralNet::SkipSpaces(char *pText)
 char *NeuralNet::SkipText(char *pText)
 {
    char *pt = pText;
-   while(pt != 0 && strchr(" \t\n\r", *pt) == 0)
+   while(pt != '\0' && strchr(" \t\n\r", *pt) == 0)
    {
       pt++;
    }
@@ -67,7 +67,7 @@ char *NeuralNet::SkipLines(char *pText, int n)
 {
    char *pt = pText;
    int line = 0;
-   while(pt != 0 && line != n)
+   while(pt != '\0' && line != n)
    {
       if(*pt == '\n')
       {
@@ -76,7 +76,7 @@ char *NeuralNet::SkipLines(char *pText, int n)
       pt++;
    }
    
-   if(pt == 0 && line != n)
+   if(pt == '\0' && line != n)
    {
       return 0;
    }
@@ -623,7 +623,7 @@ int NeuralNet::Load(char *pWeightFile, char *pNormFile, int bunchSize)
 float *NeuralNet::MemAlign16(float *pBuff)
 {
    char *pbuff = (char *)pBuff;
-   while(((size_t)pbuff & 0xF) != 0)
+   while(((unsigned int)pbuff & 0xF) != 0)
    {
       pbuff++;
    }
@@ -955,7 +955,7 @@ bool NeuralNet::GetFloatValue(char *pText, float *pRet)
    char *pt = pText;
    int i = 0;
    pt = SkipSpaces(pt);
-   while(pt != 0 && i < 100 && strchr(" \t\n\r", pt[i]) == 0)
+   while(pt != '\0' && i < 100 && strchr(" \t\n\r", pt[i]) == 0)
    {
       pbuff[i] = pt[i];
       i++;
@@ -970,7 +970,7 @@ bool NeuralNet::GetIntValue(char *pText, int *pRet)
    char *pt = pText;
    int i = 0;
    pt = SkipSpaces(pt);
-   while(pt != 0 && i < 100 && strchr(" \t\n\r", pt[i]) == 0)
+   while(pt != '\0' && i < 100 && strchr(" \t\n\r", pt[i]) == 0)
    {
       pbuff[i] = pt[i];
       i++;
