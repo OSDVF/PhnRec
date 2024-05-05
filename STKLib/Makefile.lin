@@ -4,7 +4,7 @@ AR = ar
 
 ##############################################################################
 # compiler options
-CFLAGS = -Wall -g -DDOUBLEPRECISION=0 -D_REENTRANT -DUSE_BLAS -Wwrite-strings -fpermissive
+CFLAGS = -Wall -g -DDOUBLEPRECISION=0 -D_REENTRANT -DUSE_BLAS
 CXXFLAGS = $(CFLAGS)
 
 ###############################################################################
@@ -18,7 +18,7 @@ LDLIBS = -lm -latlas -lpthread
 # CROSS_COMPILE ?= x86_64-linux-
 
 CC  := $(CROSS_COMPILE)g++
-CXX := $(CROSS_COMPILE)g++
+#CXX := $(CROSS_COMPILE)g++-4.1
 
 
 ###############################################################################

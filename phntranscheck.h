@@ -15,6 +15,7 @@
 #define _PHNTRANSCHECK_H
 
 #include <string>
+#include <cstring>
 #include <set>
 
 #define PTCE_OK        0

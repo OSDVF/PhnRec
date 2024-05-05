@@ -36,6 +36,7 @@
 #endif
 
 #include <string>
+#include <cstring>
 
 
 /* Alignment of critical dynamic data structure

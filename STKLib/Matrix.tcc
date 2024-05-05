@@ -15,7 +15,6 @@
 #include <cstdlib>
 #include <cassert>
 #include <math.h>
-#include <string.h>
 
 #ifdef USE_BLAS
 extern "C"{

@@ -12,7 +12,7 @@
 #ifdef USE_BLAS
 extern "C"{
   #include <cblas.h>
-  #include <atlas/clapack.h>
+  #include <clapack.h>
 }
 #endif
 

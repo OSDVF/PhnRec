@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <string>
-#include <string.h>
+#include <cstring>
 #include <list>
 
 #include "netgen.h"

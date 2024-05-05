@@ -20,8 +20,8 @@ LDLIBS = $(SOUNDLIB) $(BLASLIB)
 # compiler binary
 # CROSS_COMPILE ?= x86_64-linux-
 
-CC  = $(CROSS_COMPILE)g++
-CXX = $(CROSS_COMPILE)g++
+#CC  = $(CROSS_COMPILE)g++
+#CXX = $(CROSS_COMPILE)g++
 
 
 O_FILES   = melbanks.o \

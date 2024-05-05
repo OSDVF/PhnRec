@@ -2,8 +2,6 @@
 #define STK_StkStream_tcc
 
 #include <iostream>
-#include <string>
-#include <string.h>
 #pragma GCC system_header
 
 namespace STK

@@ -187,7 +187,6 @@ void PhnDec::GetBestToken(int *pPrevPhn, int *pLen)
   }
 }
 
-
 void PhnDec::TimePruning()
 {
   int cols = mHistoryLen.columns();
@@ -226,8 +225,7 @@ void PhnDec::TimePruning()
 
 	  if(mpLabFP)
 	  {
-	    
-	      fprintf(mpLabFP, "%d00000 %d00000 %s %f\n", start, end, (char *)mpPhonemes[prev_phn].c_str(), like);
+	    fprintf(mpLabFP, "%d00000 %d00000 %s %f\n", start, end, (char *)mpPhonemes[prev_phn].c_str(), like);
 	  }
 	}
   }
