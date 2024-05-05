@@ -12,8 +12,8 @@
  **************************************************************************/
 
 #include <stdio.h>
-#include <string.h>
 #include "thresholds.h"
+#include <cstring>
 
 
 Thresholds::Thresholds() :

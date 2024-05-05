@@ -1282,7 +1282,11 @@ namespace STK
   
     if (mask & MTM_HMM && !(mask & MTM_PRESCAN)) 
     {
+<<<<<<< HEAD
       if (n > 0) chptr = '\0';
+=======
+      if (n > 0) chptr = 0;
+>>>>>>> 0f754bd (Initial)
       action(mt_hmm, nodeName, this, pUserData);
     }
   }
@@ -1562,7 +1566,11 @@ printf("%f", g_floor);
     }
   
     if (mask & MTM_MIXTURE && !(mask & MTM_PRESCAN)) {
+<<<<<<< HEAD
       if (n > 0) chptr = '\0';
+=======
+      if (n > 0) chptr = 0;
+>>>>>>> 0f754bd (Initial)
       action(mt_mixture, nodeName, this, pUserData);
     }
   }
@@ -2075,7 +2083,11 @@ printf("%f", g_floor);
     }
     if (mask & MTM_STATE && !(mask & MTM_PRESCAN)) 
     {
+<<<<<<< HEAD
       if (n > 0) chptr = '\0';
+=======
+      if (n > 0) chptr = 0;
+>>>>>>> 0f754bd (Initial)
       action(mt_state, nodeName, this, pUserData);
     }
   }
@@ -2199,7 +2211,11 @@ printf("%f", g_floor);
     }
     
     if (mask & MTM_XFORM_INSTANCE && !(mask & MTM_PRESCAN)) {
+<<<<<<< HEAD
       if (n > 0) chptr = '\0';
+=======
+      if (n > 0) chptr = 0;
+>>>>>>> 0f754bd (Initial)
       action(mt_XformInstance, nodeName, this, pUserData);
     }
   }
@@ -2255,7 +2271,11 @@ printf("%f", g_floor);
     if (!(mask & MTM_PRESCAN)) 
     {
       if (n > 0) 
+<<<<<<< HEAD
         chptr = '\0';
+=======
+        chptr = 0;
+>>>>>>> 0f754bd (Initial)
         
       action(mt_Xform, nodeName, this, pUserData);
     }

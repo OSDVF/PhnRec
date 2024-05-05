@@ -44,7 +44,11 @@
 #define DEFAULT_ARC_CACHE           1000
 
 //#ifndef INFINITY
+<<<<<<< HEAD
 extern char fsm_infinity_bytes[];
+=======
+extern unsigned char fsm_infinity_bytes[];
+>>>>>>> 0f754bd (Initial)
 #define FSM_INFINITY *((float *)fsm_infinity_bytes) 
 //#endif
 

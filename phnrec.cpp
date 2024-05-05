@@ -110,7 +110,7 @@ void live_callback(unsigned int message, char *word, long_long start, long_long 
 }
 
 
-int main(int argc, char *argv[])
+int main(int argc, char * const argv[])
 {
 	char *config_dir = 0;
 	char *file_list = 0;

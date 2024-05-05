@@ -1,5 +1,7 @@
 *.o
 *.a
 vadalize
-phnrec
 *~
+*.dll
+*.def
+phnrec

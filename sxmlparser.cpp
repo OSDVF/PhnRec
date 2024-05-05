@@ -1,8 +1,6 @@
 #include <assert.h>
 #include <stdio.h>
 #include <string>
-#include <string.h>
-#include <stdlib.h>
 
 #ifdef WIN32
   #include <io.h>
